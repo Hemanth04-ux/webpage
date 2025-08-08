@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Webpage</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9fbfc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0055aa;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #003f7f;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #0055aa;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #003f7f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 30%;
+            margin: 1%;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <p>Exploring HTML, CSS, and JavaScript</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a beginner web developer learning how to design and build webpages. I enjoy learning about new technologies and applying them creatively.</p>
+            <img src="https://via.placeholder.com/800x300" alt="About me image">
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>I am currently learning:</p>
+            <ul>
+                <li>HTML5 - Creating structure for websites</li>
+                <li>CSS3 - Styling and layout</li>
+                <li>JavaScript - Making websites interactive</li>
+            </ul>
+            <p>You can learn more about HTML and CSS on <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a>.</p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Gallery image 1">
+                <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Gallery image 2">
+                <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Gallery image 3">
+            </div>
+        </section>
+
+        <!-- Interactive Button -->
+        <section>
+            <h2>Try an Action</h2>
+            <p>Click the button below to trigger a message:</p>
+            <button class="btn" onclick="showMessage()">Click Me!</button>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Want to connect? Email me at <a href="mailto:yourname@example.com">yourname@example.com</a> or visit my profile on:</p>
+            <ul>
+                <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script>
+        function showMessage() {
+            alert("Thanks for clicking! Keep learning 🚀");
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Personal Webpage</p>
+    </footer>
+
+</body>
+</html>
